@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Silkscreen"
+      rel="stylesheet"
+    />
+    
+    <title>nightfall</title>
+  </head>
+
+  <body>
+    <input type="checkbox" id="darkmode-toggle">
+    <label for="darkmode-toggle"></label>
+
+    <div class="background"></div>
+
+    <a href="index.html"><h1>nightfall</h1></a>
+
+    <header>
+      <nav>
+        <ul>
+          <li></li>
+          <li><a href="dev-log.html">DEV-LOG</a></li>
+          <li><a href="showcase.html">SHOWCASE</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="download.html">DOWNLOAD</a></li>
+        </ul>
+      </nav>
+
+
+      <p>download my game using this button!</p>
+
+      <div class="button-wrapper">
+        <button class="confetti-button">download</button>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+      <script>
+        document.getElementsByClassName("confetti-button")[0].addEventListener("click", () =>{
+          let canvas = document.createElement("canvas");
+          confetti();
+        })
+
+
+      </script>
+      
+    </header>
+
+
+ 
